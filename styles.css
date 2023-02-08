@@ -25,13 +25,14 @@ header {
 
 footer {
     color: white;
+    background-color: black;
     margin-bottom: 0;
     justify-content: center;
     height: 50px;
-    background-image: 
+    /*background-image: 
         linear-gradient(transparent, black), 
         url(https://images.pexels.com/photos/114820/pexels-photo-114820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-size: cover;
+    background-size: cover;*/
 }
 
 main {
@@ -40,7 +41,7 @@ main {
 }
 
 h1 {
-    padding: 10px;
+    font-size: 2.5rem;
 }
 
 /* start navbar */
@@ -69,6 +70,10 @@ h1 {
     font-weight: bold;
 }
 
+button > a {
+    text-decoration: none;
+}
+
 .nav-links {
     flex-direction: row;
     gap: 16px;
@@ -87,10 +92,6 @@ h1 {
 }
 */
 
-.text {
-    text-align: center;
-}
-
 button {
     background-color: black;    
 }
@@ -101,16 +102,21 @@ button {
     justify-content: center;
     flex-direction: row;
     flex: 1;
+    align-items: center;
 }
 
 .hero.container > img {
     width: 40%;
 }
 
+.hero-text.text {
+    align-items: flex-start;
+}
+
 .about {
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: left;
     margin: 20px;
     height: 50vh;
     padding: 25px;
@@ -121,6 +127,10 @@ button {
 
 .about > img {
     width: 40%;
+}
+
+.about-text.text {
+    align-items: flex-start;
 }
 
 .info-text {
@@ -175,4 +185,8 @@ figcaption {
 
 .closing > img {
     width: 40%;
+}
+
+.sign-up.container {
+    text-align: center;
 }
